@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apuração da Eleição</title>
+
+  <link rel="stylesheet" href="apuracao.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+
+  <main class="container">
+
+    <header class="topo">
+      <h1>📊 Apuração da Eleição</h1>
+
+      <button id="btnAtualizar">
+        Atualizar apuração
+      </button>
+    </header>
+
+    <section class="cards">
+
+      <div class="card">
+        <span>Total de votos</span>
+        <strong id="totalVotos">0</strong>
+      </div>
+
+      <div class="card">
+        <span>Votos válidos</span>
+        <strong id="votosValidos">0</strong>
+      </div>
+
+      <div class="card">
+        <span>Brancos</span>
+        <strong id="votosBrancos">0</strong>
+      </div>
+
+      <div class="card">
+        <span>Nulos</span>
+        <strong id="votosNulos">0</strong>
+      </div>
+
+    </section>
+
+    <section class="resultado">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Candidato</th>
+            <th>Partido</th>
+            <th>Votos</th>
+            <th>%</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabelaResultados"></tbody>
+      </table>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="apuracao.js"></script>
+</body>
+</html>

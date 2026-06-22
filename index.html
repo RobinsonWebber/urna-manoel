@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urna Eletrônica Escolar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="urna-container">
+    <header class="topo">
+      <h1>Urna Eletrônica Escolar</h1>
+      <div class="selo-escola">Projeto Escolar</div>
+    </header>
+
+    <section id="telaLogin" class="login">
+      <h2>Identificação do eleitor</h2>
+      <p>Digite seu código de aluno para iniciar a votação.</p>
+      <input id="codigoAluno" type="text" inputmode="numeric" autocomplete="off" placeholder="Código do aluno" />
+      <button id="btnEntrar">Entrar na urna</button>
+      <p id="mensagemLogin" class="mensagem"></p>
+    </section>
+
+    <section id="telaUrna" class="urna oculto">
+      <div class="tela">
+        <div>
+          <div class="etapa">Seu voto para</div>
+          <h2 class="titulo-voto" id="cargoAtual">Representante de turma</h2>
+
+          <div class="campo-numero" id="campoNumero">
+            <div class="digito"></div>
+            <div class="digito"></div>
+          </div>
+
+          <div class="info-candidato">
+            <div class="dados-candidato">
+              <p><strong>Número:</strong> <span id="numeroCandidato">--</span></p>
+              <p><strong>Nome:</strong> <span id="nomeCandidato">---</span></p>
+              <p><strong>Partido:</strong> <span id="partidoCandidato">---</span></p>
+            </div>
+
+            <div class="foto-candidato" id="fotoCandidato">
+              Foto do candidato
+            </div>
+          </div>
+
+          <div class="mensagem" id="mensagemUrna"></div>
+        </div>
+
+        <div class="rodape-tela">
+          Aperte <strong>CONFIRMA</strong> para votar, <strong>CORRIGE</strong> para apagar ou <strong>BRANCO</strong> para voto em branco.
+        </div>
+      </div>
+
+      <aside class="painel">
+        <div class="teclado">
+          <button class="tecla" data-numero="1">1</button>
+          <button class="tecla" data-numero="2">2</button>
+          <button class="tecla" data-numero="3">3</button>
+          <button class="tecla" data-numero="4">4</button>
+          <button class="tecla" data-numero="5">5</button>
+          <button class="tecla" data-numero="6">6</button>
+          <button class="tecla" data-numero="7">7</button>
+          <button class="tecla" data-numero="8">8</button>
+          <button class="tecla" data-numero="9">9</button>
+          <button class="tecla invisivel"></button>
+          <button class="tecla" data-numero="0">0</button>
+          <button class="tecla invisivel"></button>
+        </div>
+
+        <div class="acoes">
+          <button class="botao-acao branco" id="btnBranco">BRANCO</button>
+          <button class="botao-acao corrige" id="btnCorrige">CORRIGE</button>
+          <button class="botao-acao confirma" id="btnConfirma">CONFIRMA</button>
+        </div>
+      </aside>
+    </section>
+
+    <section id="telaFinal" class="finalizado oculto">
+      FIM<br />Voto registrado com sucesso!
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

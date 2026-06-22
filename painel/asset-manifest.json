@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/urna/painel/static/css/main.01da97ad.css",
+    "main.js": "/urna/painel/static/js/main.7eb74555.js",
+    "static/js/453.adf780cf.chunk.js": "/urna/painel/static/js/453.adf780cf.chunk.js",
+    "index.html": "/urna/painel/index.html",
+    "main.01da97ad.css.map": "/urna/painel/static/css/main.01da97ad.css.map",
+    "main.7eb74555.js.map": "/urna/painel/static/js/main.7eb74555.js.map",
+    "453.adf780cf.chunk.js.map": "/urna/painel/static/js/453.adf780cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01da97ad.css",
+    "static/js/main.7eb74555.js"
+  ]
+}

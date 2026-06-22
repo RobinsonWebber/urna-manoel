@@ -1,0 +1,115 @@
+.apuracao-page {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.apuracao-header {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.apuracao-header h1 {
+  margin: 0;
+}
+
+.apuracao-header p {
+  color: #6b7280;
+}
+
+.btn-atualizar {
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.total-card {
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-card strong {
+  font-size: 36px;
+}
+
+.resultado-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resultado-card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 60px 90px 1fr 100px;
+  gap: 18px;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.posicao {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.resultado-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.resultado-info h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.resultado-info p {
+  margin: 5px 0 10px;
+  color: #6b7280;
+}
+
+.barra {
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 20px;
+}
+
+.votos-box {
+  text-align: center;
+}
+
+.votos-box strong {
+  display: block;
+  font-size: 32px;
+}
+
+.votos-box span,
+.votos-box small {
+  display: block;
+  color: #6b7280;
+}

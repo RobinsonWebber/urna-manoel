@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #cfd4dc, #bfc6d1);
+  color: #111827;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.urna-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0f172a;
+}
+
+.selo-escola {
+  background: #0f172a;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+  max-width: 560px;
+  margin: 40px auto;
+  background: #f8fafc;
+  border: 6px solid #111827;
+  border-radius: 22px;
+  padding: 36px;
+  text-align: center;
+}
+
+.login h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.login p {
+  font-size: 1.1rem;
+}
+
+.login input {
+  width: 100%;
+  height: 90px;
+  border-radius: 18px;
+  border: 4px solid #111827;
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 26px 0;
+  outline: none;
+}
+
+.login button {
+  width: 100%;
+  height: 72px;
+  border: none;
+  border-radius: 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login button:hover {
+  background: #1d4ed8;
+}
+
+.oculto {
+  display: none !important;
+}
+/* =========================
+   URNA
+========================= */
+
+.urna {
+  height: calc(100vh - 120px);
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 28px;
+}
+
+/* =========================
+   TELA
+========================= */
+
+.tela {
+  background: #f8fafc;
+  border: 6px solid #111827;
+  border-radius: 20px;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.etapa {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #475569;
+}
+
+.titulo-voto {
+  font-size: 2.6rem;
+  margin: 12px 0 28px;
+  color: #0f172a;
+}
+
+/* =========================
+   NÚMEROS
+========================= */
+
+.campo-numero {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+.digito {
+  width: 80px;
+  height: 95px;
+  border: 4px solid #111827;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* =========================
+   CANDIDATO
+========================= */
+
+.info-candidato {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 28px;
+  align-items: start;
+}
+
+.dados-candidato p {
+  margin: 16px 0;
+  font-size: 1.5rem;
+}
+
+.foto-candidato {
+  width: 220px;
+  height: 260px;
+  border: 4px solid #111827;
+  background: #e5e7eb;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-candidato img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   MENSAGENS
+========================= */
+
+.mensagem {
+  margin-top: 24px;
+  min-height: 36px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.rodape-tela {
+  margin-top: 30px;
+  border-top: 3px solid #cbd5e1;
+  padding-top: 18px;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+/* =========================
+   PAINEL DIREITO
+========================= */
+
+.painel {
+  background: #111827;
+  border-radius: 22px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* =========================
+   TECLADO
+========================= */
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.tecla {
+  height: 92px;
+  border: none;
+  border-radius: 16px;
+  background: #1f2937;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.35);
+  transition: 0.1s;
+}
+
+.tecla:hover {
+  background: #374151;
+}
+
+.tecla:active {
+  transform: translateY(2px);
+}
+
+/* =========================
+   AÇÕES
+========================= */
+
+.acoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.botao-acao {
+  border: none;
+  border-radius: 16px;
+  min-height: 82px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.botao-acao:active {
+  transform: translateY(2px);
+}
+
+.branco {
+  background: #f8fafc;
+  color: #111827;
+}
+
+.corrige {
+  background: #f97316;
+  color: white;
+}
+
+.confirma {
+  grid-column: span 2;
+  min-height: 96px;
+  background: #22c55e;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.confirma:hover {
+  background: #16a34a;
+}
+
+/* =========================
+   TELA FINAL
+========================= */
+
+.finalizado {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+  .urna {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .info-candidato {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-candidato {
+    width: 180px;
+    height: 220px;
+  }
+
+  .painel {
+    padding-bottom: 40px;
+  }
+}
